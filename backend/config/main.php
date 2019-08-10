@@ -15,6 +15,7 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    'defaultRoute' => 'shop/default/index',
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
@@ -41,7 +42,7 @@ return [
         ],
         'shop' => [
             'class' => 'dvizh\shop\Module',
-            'adminRoles' => ['admin'],
+            'adminRoles' => ['@'],
             'defaultPriceTypeId' => 1, //Цена по умолчанию
         ],
         'filter' => [
@@ -110,12 +111,17 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
+//        'urlManager' => [
+//            'enablePrettyUrl' => false,
+//            'showScriptName' => false,
+//            'rules' => [
+////                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
+////                'shop/<action:cart|order>'=>'shop/<action>',
+//                'shop/<category:[\w_-]+>/<id:[\d]+>'=>'shop/show',
+//                'shop/<category:[\w_-]+>'=>'shop/category',
+//                'shop'=>'shop/index',
+//            ],
+//        ],
     ],
     'params' => $params,
 ];

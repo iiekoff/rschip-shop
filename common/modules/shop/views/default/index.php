@@ -30,12 +30,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 <a href="<?=Url::toRoute(['/shop/category/create']);?>" class="btn btn-default"><i class="glyphicon glyphicon-plus" /></i></a>
             </td>
         </tr>
-        <tr>
-            <th>Поступление</th>
-            <th>
-                <a href="<?=Url::toRoute(['/shop/incoming/index']);?>" class="btn btn-default"><i class="glyphicon glyphicon-eye-open" /></i></a>
-                <a href="<?=Url::toRoute(['/shop/incoming/create']);?>" class="btn btn-default"><i class="glyphicon glyphicon-plus" /></i></a>
-            </th>
-        </tr>
+<!--        <tr>-->
+<!--            <th>Поступление</th>-->
+<!--            <th>-->
+<!--                <a href="--><?//=Url::toRoute(['/shop/incoming/index']);?><!--" class="btn btn-default"><i class="glyphicon glyphicon-eye-open" /></i></a>-->
+<!--                <a href="--><?//=Url::toRoute(['/shop/incoming/create']);?><!--" class="btn btn-default"><i class="glyphicon glyphicon-plus" /></i></a>-->
+<!--            </th>-->
+<!--        </tr>-->
     </table>
 </div>

@@ -5,6 +5,7 @@ use League\Flysystem\Adapter;
 use League\Flysystem\Filesystem;
 
 return [
+    'name' => 'RSCHIP',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
@@ -92,7 +93,7 @@ return [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@common/messages', //
-                    'sourceLanguage' => 'en',
+                    'sourceLanguage' => 'ru',
                     'fileMap' => [
                     ],
                 ],
