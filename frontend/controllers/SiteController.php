@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\MVL;
+use common\models\MVL50;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -283,5 +285,122 @@ class SiteController extends Controller
         return $this->render('resendVerificationEmail', [
             'model' => $model
         ]);
+    }
+
+    /**
+     * Displays products page.
+     * @return mixed
+     */
+    public function actionProducts()
+    {
+        return $this->render('products');
+    }
+
+    /**
+     * Displays monte-gt page.
+     * @return mixed
+     */
+    public function actionMonteGt()
+    {
+        return $this->render('monte-gt');
+    }
+
+    /**
+     * Displays monte-gtr page.
+     * @return mixed
+     */
+    public function actionMonteGtr()
+    {
+        return $this->render('monte-gtr');
+    }
+    /**
+     * Displays support page.
+     * @return mixed
+     */
+    public function actionSupport()
+    {
+        return $this->render('support');
+    }
+
+    /**
+     * Displays support-question page.
+     * @return mixed
+     */
+    public function actionSupportQuestion()
+    {
+        return $this->render('support-question');
+    }
+    /**
+     * Displays support-shipment page.
+     * @return mixed
+     */
+    public function actionSupportShipment()
+    {
+        return $this->render('support-shipment');
+    }
+
+    /**
+     * Displays support-install page.
+     * @return mixed
+     */
+    public function actionSupportInstall()
+    {
+        return $this->render('support-install');
+    }
+
+    /**
+     * Displays contacts page.
+     * @return mixed
+     */
+    public function actionContacts()
+    {
+        return $this->render('contacts');
+    }
+
+    /**
+     * Displays contacts page.
+     * @return mixed
+     */
+    public function actionShop()
+    {
+        return $this->render('shop');
+    }
+
+    /**
+     * Displays success page.
+     * @return mixed
+     */
+    public function actionSuccess()
+    {
+        return $this->render('success');
+    }
+
+
+    /**
+     * Displays cart page.
+     * @return mixed
+     */
+    public function actionCart()
+    {
+        return $this->render('cart');
+    }
+
+
+    /**
+     * Displays cart-info page.
+     * @return mixed
+     */
+    public function actionCartInfo()
+    {
+        return $this->render('cart-info');
+    }
+
+    /**
+     * Displays cart-payment page.
+     * @return mixed
+     */
+    public function actionCartPayment()
+    {
+        return $this->render('cart-payment');
     }
 }

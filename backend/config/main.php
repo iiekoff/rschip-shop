@@ -111,17 +111,17 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-//        'urlManager' => [
-//            'enablePrettyUrl' => false,
-//            'showScriptName' => false,
-//            'rules' => [
-////                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
-////                'shop/<action:cart|order>'=>'shop/<action>',
-//                'shop/<category:[\w_-]+>/<id:[\d]+>'=>'shop/show',
-//                'shop/<category:[\w_-]+>'=>'shop/category',
-//                'shop'=>'shop/index',
-//            ],
-//        ],
+        'urlManager' => [
+            'enablePrettyUrl' => false,
+            'showScriptName' => false,
+            'rules' => [
+                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
+//                'shop/<action:cart|order>'=>'shop/<action>',
+                'shop/<category:[\w_-]+>/<id:[\d]+>'=>'shop/show',
+                'shop/<category:[\w_-]+>'=>'shop/category',
+                'shop'=>'shop/index',
+            ],
+        ],
     ],
     'params' => $params,
 ];

@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use common\models\MVL;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
